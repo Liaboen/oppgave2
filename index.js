@@ -187,9 +187,7 @@ try {
 		
 		// Use array destructuring to change the 3 statements below into 1 statement.
 		// You should not need a temporary variable anymore.
-		let tmp = a;
-		a = b;
-		b = tmp; 
+		[a, b] = [b, a];
 
 		// Don't make changes below this line	
 		
@@ -233,7 +231,6 @@ try {
 
 
 	const a = ['Oslo', 985];
-	const [name, age] = a;
 
     // Don't make changes below this line
 
@@ -325,11 +322,8 @@ try {
 		// - Do use object spread properties
 		// - Think about the order!
 		
-		//let result = { obj1, obj2, obj3 };
-		let {a, ...rest} = obj1;
-		let {b, d, e} = obj2;
-		let {b3, c, d3} = obj3;
-		let result = {a,b,c,d,e};
+		let result = { ...obj1, ...obj2, c:obj3.c };
+
 
 		// Don't make changes below this line	
 		

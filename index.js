@@ -322,7 +322,7 @@ try {
 		// - Do use object spread properties
 		// - Think about the order!
 		
-		let result = { ...obj1, ...obj2, c:obj3.c };
+		let result = { ...obj1, ...obj3 ,...obj2,};
 
 
 		// Don't make changes below this line	
